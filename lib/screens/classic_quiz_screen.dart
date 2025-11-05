@@ -165,7 +165,7 @@ class _ClassicQuizScreenState extends State<ClassicQuizScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             ),
           ),
-        if (currentQuestionIndex > 0) const Spacer(),
+        const Spacer(),
         ElevatedButton.icon(
           onPressed: () {
             if (currentQuestionIndex < questions.length - 1) {

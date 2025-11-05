@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'classic_quiz_Screen.dart';
-import 'timer_quiz_Screen.dart';
-import 'endless_quiz_Screen.dart';
+import 'classic_quiz_screen.dart';
+import 'timer_quiz_screen.dart';
+import 'endless_quiz_screen.dart';
 import '../widgets/mode_card.dart';
 import '../widgets/name_dialog.dart';
 
@@ -16,7 +16,7 @@ class ChooseModeScreen extends StatelessWidget {
           icon: const Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
         ),
-        title: const Text('Choose Mode'),
+        title: const Text('Pilih Mode'),
         backgroundColor: Colors.blue.shade400,
       ),
       body: Container(

@@ -74,7 +74,7 @@ class _NameDialogState extends State<NameDialog> {
             ),
             const SizedBox(height: 15),
             Text(
-              '${widget.mode} Mode',
+              'Mode ${widget.mode}',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -83,7 +83,7 @@ class _NameDialogState extends State<NameDialog> {
             ),
             const SizedBox(height: 20),
             const Text(
-              'Enter Your Name',
+              'Masukkan nama Anda:',
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w500,
@@ -95,7 +95,7 @@ class _NameDialogState extends State<NameDialog> {
               autofocus: true,
               textCapitalization: TextCapitalization.words,
               decoration: InputDecoration(
-                hintText: 'Your Name',
+                hintText: 'Nama',
                 prefixIcon: const Icon(Icons.person),
                 filled: true,
                 fillColor: Colors.grey.shade100,
@@ -123,7 +123,7 @@ class _NameDialogState extends State<NameDialog> {
                     ),
                   ),
                   child: const Text(
-                    'Cancel',
+                    'Batal',
                     style: TextStyle(fontSize: 16),
                   ),
                 ),
@@ -141,7 +141,7 @@ class _NameDialogState extends State<NameDialog> {
                     ),
                   ),
                   child: const Text(
-                    'Start',
+                    'Mulai',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,

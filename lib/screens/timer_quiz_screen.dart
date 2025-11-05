@@ -216,7 +216,7 @@ class _TimerQuizScreenState extends State<TimerQuizScreen> {
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
             ),
           ),
-        if (currentQuestionIndex > 0) const Spacer(),
+        const Spacer(),
         ElevatedButton.icon(
           onPressed: () {
             if (currentQuestionIndex < questions.length - 1) {

@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      'Welcome to GoQuiz',
+                      'Selamat Datang di GoQuiz',
                       style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,
@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(30),
                         ),
                       ),
-                      child: const Text('Start Quiz', style: TextStyle(fontSize: 20)),
+                      child: const Text('Mulai Kuis', style: TextStyle(fontSize: 20)),
                     ),
                   ],
                 ),
