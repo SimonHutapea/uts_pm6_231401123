@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'choose_mode_screen.dart';
+import 'leaderboard_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -41,6 +42,26 @@ class HomeScreen extends StatelessWidget {
                       child: const Text('Mulai Kuis', style: TextStyle(fontSize: 20)),
                     ),
                   ],
+                ),
+              ),
+              Positioned(
+                bottom: 20,
+                right: 20,
+                child: ElevatedButton.icon(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const LeaderboardScreen()),
+                    );
+                  },
+                  icon: const Icon(Icons.leaderboard),
+                  label: const Text('Leaderboard'),
+                  style: ElevatedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
                 ),
               ),
             ],
