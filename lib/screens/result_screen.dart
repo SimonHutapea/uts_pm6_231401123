@@ -56,7 +56,11 @@ class _ResultScreenState extends State<ResultScreen> {
           backgroundColor: _getModeColor(),
         ),
         body: Container(
-          decoration: BoxDecoration(color: Colors.blue.shade100),
+          decoration: BoxDecoration(gradient: LinearGradient(
+          colors: [Colors.purple.shade100, Colors.blue.shade100],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        )),
           child: Column(
             children: [
               const SizedBox(height: 20),

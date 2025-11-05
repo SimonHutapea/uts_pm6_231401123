@@ -13,6 +13,7 @@ class GoQuizApp extends StatelessWidget {
     return MaterialApp(
       title: 'GoQuiz',
       theme: ThemeData(
+        fontFamily: 'Montserrat',
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),

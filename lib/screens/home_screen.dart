@@ -7,20 +7,39 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(color: Colors.blue.shade300),
+        decoration: BoxDecoration(gradient: LinearGradient(
+          colors: [Colors.purple.shade300, Colors.blue.shade300],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        )),
         child: SafeArea(
           child: Stack(
             children: [
+              Positioned(
+                top: 20,
+                left: (screenWidth - (screenWidth * 1)) / 2,
+                child: ClipOval(
+                      child: Image.asset(
+                        'assets/images/my_icon.png',
+                        width: screenWidth * 1,
+                        height: screenWidth * 1,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+              ),
               Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    const SizedBox(height: 30),
                     const Text(
                       'Selamat Datang di GoQuiz',
                       style: TextStyle(
-                        fontSize: 32,
+                        fontSize: 28,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),

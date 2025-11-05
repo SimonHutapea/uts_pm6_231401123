@@ -25,14 +25,25 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(color: Colors.blue.shade300),
-        child: const Center(
+        decoration: BoxDecoration(gradient: LinearGradient(
+          colors: [Colors.purple.shade300, Colors.blue.shade300],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        )),
+        child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(Icons.quiz, size: 100, color: Colors.white),
-              SizedBox(height: 20),
-              Text(
+              ClipOval(
+                child: Image.asset(
+                  'assets/images/my_icon.png',
+                  width: 140,
+                  height: 140,
+                  fit: BoxFit.cover,
+                ),
+              ),
+              const SizedBox(height: 20),
+              const Text(
                 'GoQuiz',
                 style: TextStyle(
                   fontSize: 48,

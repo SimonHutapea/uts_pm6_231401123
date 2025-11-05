@@ -20,7 +20,11 @@ class ChooseModeScreen extends StatelessWidget {
         backgroundColor: Colors.blue.shade400,
       ),
       body: Container(
-        decoration: BoxDecoration(color: Colors.blue.shade100),
+        decoration: BoxDecoration(gradient: LinearGradient(
+          colors: [Colors.purple.shade100, Colors.blue.shade100],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        )),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

@@ -68,7 +68,11 @@ class _LeaderboardScreenState extends State<LeaderboardScreen> {
         backgroundColor: Colors.blue.shade400,
       ),
       body: Container(
-        decoration: BoxDecoration(color: Colors.blue.shade100),
+        decoration: BoxDecoration(gradient: LinearGradient(
+          colors: [Colors.purple.shade100, Colors.blue.shade100],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        )),
         child: Column(
           children: [
             const SizedBox(height: 20),
